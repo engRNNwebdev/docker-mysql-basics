@@ -1,0 +1,9 @@
+vision:
+   build: .
+   ports:
+      - 3306:3306
+   environment:
+      - MYSQL_ROOT_PASSWORD=iamgroot
+      - MYSQL_DB=mockdb
+      - MYSQL_USER=groot
+      - MYSQL_PASSWORD=iamgroot
