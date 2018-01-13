@@ -1,4 +1,4 @@
-vision:
+mysql:
    build: .
    ports:
       - 3306:3306
