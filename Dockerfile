@@ -1,6 +1,6 @@
 FROM debian:wheezy
 #Created by Jonathan Ferraro, email below
-MAINTAINER jonathan.o.ferraro@espn.com
+MAINTAINER jf0108a@gmail.com
 
 #Update to latest version of Debian, Install MySQL
 RUN apt-get update && \
