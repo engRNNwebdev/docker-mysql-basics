@@ -40,7 +40,7 @@ This installs the Docker Daemon so you can use the terminal commands.
 
 #### STEP 1:
 Fork the Repository and download to your machine.
-  	NOTE: you can use github desktop or the command line via the following documentation: https://help.github.com/categories/managing-remotes/ OR https://confluence.disney.com/display/WETO/GitHub
+  	NOTE: you can use github desktop or the command line via the following documentation: https://help.github.com/categories/managing-remotes/
 
 #### STEP 2:
 Open Terminal and go to the `../mockdb` directory on your machine
