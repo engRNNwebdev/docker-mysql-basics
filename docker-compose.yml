@@ -7,3 +7,7 @@ mysql:
       - MYSQL_DB=mockdb
       - MYSQL_USER=groot
       - MYSQL_PASSWORD=iamgroot
+    volumes:
+      - mysql-data:/var/lib/mysql
+volumes: 
+   mysql-data:
