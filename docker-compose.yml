@@ -1,13 +1,15 @@
-mysql:
-   build: .
-   ports:
-      - 3306:3306
-   environment:
-      - MYSQL_ROOT_PASSWORD=iamgroot
-      - MYSQL_DB=mockdb
-      - MYSQL_USER=groot
-      - MYSQL_PASSWORD=iamgroot
-    volumes:
-      - mysql-data:/var/lib/mysql
+version: '2'
+services:
+   mysql:
+      build: .
+      ports:
+         - 3306:3306
+      environment:
+         - MYSQL_ROOT_PASSWORD=iamgroot
+         - MYSQL_DB=mockdb
+         - MYSQL_USER=groot
+         - MYSQL_PASSWORD=iamgroot
+       volumes:
+         - mysql-data:/var/lib/mysql
 volumes: 
    mysql-data:
