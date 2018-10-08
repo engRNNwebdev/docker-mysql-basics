@@ -1,6 +1,6 @@
 version: '2'
 services:
-   mysql:
+   mysql-docker:
       build: .
       ports:
          - 3306:3306
