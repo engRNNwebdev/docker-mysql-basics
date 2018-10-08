@@ -1,7 +1,7 @@
 version: '2'
 services:
    mysql-docker:
-      build: .
+      build: Dockerfile
       ports:
          - 3306:3306
       environment:
