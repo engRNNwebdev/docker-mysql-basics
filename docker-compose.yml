@@ -1,7 +1,9 @@
 version: '2'
 services:
-   mysql-docker:
-      build: .
+   mysql:
+      container_name: mysql-app-host
+      image: mysql:latest
+      restart: always
       ports:
          - 3306:3306
       environment:
@@ -9,7 +11,7 @@ services:
          - MYSQL_DB=mockdb
          - MYSQL_USER=groot
          - MYSQL_PASSWORD=iamgroot
-       volumes:
+      volumes:
          - mysql-data:/var/lib/mysql
-volumes: 
+volumes:
    mysql-data:
