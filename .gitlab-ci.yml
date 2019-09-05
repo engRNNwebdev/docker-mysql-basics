@@ -1,0 +1,20 @@
+image: debian:wheezy
+
+services:
+  - postgres:9.3
+
+before_script:
+ - docker -v
+ - docker ps
+ - docker-compose -v
+ 
+deploy_master:
+  only:
+    - master
+  script:
+    - docker-compose down
+    - docker-compose build
+    - docker-compose up -d
+  tags:
+      - master
+      - mysql
